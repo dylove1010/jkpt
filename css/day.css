@@ -74,6 +74,9 @@ html,body,div,p,a,img,h1,h2,h3,h4,h5,h6,span,ul,li,ol,dl,dt,dd{margin:0;padding:
 	color: rgb(32, 32, 32);
 	border-radius:5px;
 }
+.sidebar ul li a:hover{
+	cursor: pointer;
+}
 .sidebar ul li a.tab-click{
 		background-color: #0099ff;
 		color:white;
@@ -95,6 +98,9 @@ html,body,div,p,a,img,h1,h2,h3,h4,h5,h6,span,ul,li,ol,dl,dt,dd{margin:0;padding:
 	width: 80px;
 	float: left;
 	text-align: center;
+}
+.center-tab li:hover{
+	cursor: pointer;
 }
 .center-tab-click{
 		color:#0c9900;
