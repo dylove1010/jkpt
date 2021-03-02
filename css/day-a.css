@@ -3,6 +3,11 @@
     /*background-color: #ededed;*/
 }
 .day-con-right .unit{
+
     float: left;
     background-color: #ededed;
+}
+.day-con-right .unit-head{
+    background-color:#4377dd;
+
 }
