@@ -55,7 +55,6 @@ html,body,div,p,a,img,h1,h2,h3,h4,h5,h6,span,ul,li,ol,dl,dt,dd{margin:0;padding:
 	height: 300px;
 	font-size: 18px;
 }
-1212
 .sidebar ul{
 	height: 300px;
 	box-sizing: border-box;
@@ -114,13 +113,12 @@ html,body,div,p,a,img,h1,h2,h3,h4,h5,h6,span,ul,li,ol,dl,dt,dd{margin:0;padding:
 /*	outline-style: none;*/
 /*}*/
 .center-data {
-	height:850px;
+	min-height:calc(100vh - 140px);
 	width: 100%;
 	border: 1px solid #bbbbbb;
 	margin-top: 5px;
 }
 .right-tab {
-	height: 140px;
 	width: calc(100% - 50px);
 	background-color: #f9f9f9;
 	padding: 10px;

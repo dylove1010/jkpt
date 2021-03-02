@@ -9,6 +9,9 @@ for (var i=0;i<tablist.length;i++) {
         oldIndex=this.index;
     }
 }
+$(document).ready(function(){
+    tablist[0].click();
+});
 
 //ztree数据
 var setting = {	};
