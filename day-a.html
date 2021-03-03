@@ -61,23 +61,95 @@
 
    <!-- 右边统计数据表格 -->
   <div class="day-con-right">
-    <div class="layui-row layui-col-space10">
-      <div class="layui-col-md4">
+    <div class="layui-row layui-col-space10" style="margin-left: 0;margin-top: 0">
+        <!--第一个单元-->
+      <div class="layui-col-md3 unit" style="padding: 0">
           <p class="unit-head">负载</p>
-          <ul>
+          <div class="layui-row table-row"  >
+              <div class="layui-col-md5">
+                  <img class="table-square" src="img/square.png" alt="正方形">线路名称
+              </div>
+              <div class="layui-col-md1" >&#10034</div>
+              <div class="layui-col-md6" >
+                  <span style="color: red">中心配电房1000KV2</span>
+              </div>
+          </div>
 
-          </ul>
-      </div>
-      <div class="unit">
-          负载
-      </div>
-      <div class="unit">
-          负载
-      </div>
-      <div class="unit">
-          负载
-      </div>
+          <div class="layui-row table-row" >
+              <div class="layui-col-md5">
+                  <img class="table-square" src="img/square.png" alt="正方形">额定容量
+              </div>
+              <div class="layui-col-md1" >&#10034</div>
+              <div class="layui-col-md6">
+                  <span>1024kw</span>
+              </div>
+          </div>
+
+          <div class="layui-row table-row" >
+              <div class="layui-col-md5">
+                  <img class="table-square" src="img/square.png" alt="正方形">负载
+              </div>
+              <div class="layui-col-md1" >&#10034</div>
+              <div class="layui-col-md6">
+                  <span>425kw</span>
+              </div>
+          </div>
+
+          <div class="layui-row table-row" >
+              <div class="layui-col-md5" style="font-size: 0.9em">
+                  <img class="table-square" src="img/square.png" alt="正方形">近30天最高负荷
+              </div>
+              <div class="layui-col-md1" >&#10034</div>
+              <div class="layui-col-md6">
+                  <span>895</span>
+              </div>
+          </div>
+        </div>
+        <!--第二个单元-->
+        <div class="layui-col-md3 unit" style="padding: 0">
+            <p class="unit-head">负载</p>
+            <div class="layui-row table-row"  >
+                <div class="layui-col-md5">
+                    <img class="table-square" src="img/square.png" alt="正方形">线路名称
+                </div>
+                <div class="layui-col-md1" >&#10034</div>
+                <div class="layui-col-md6" >
+                    <span style="color: red">中心配电房1000KV2</span>
+                </div>
+            </div>
+
+            <div class="layui-row table-row" >
+                <div class="layui-col-md5">
+                    <img class="table-square" src="img/square.png" alt="正方形">额定容量
+                </div>
+                <div class="layui-col-md1" >&#10034</div>
+                <div class="layui-col-md6">
+                    <span>1024kw</span>
+                </div>
+            </div>
+
+            <div class="layui-row table-row" >
+                <div class="layui-col-md5">
+                    <img class="table-square" src="img/square.png" alt="正方形">负载
+                </div>
+                <div class="layui-col-md1" >&#10034</div>
+                <div class="layui-col-md6">
+                    <span>425kw</span>
+                </div>
+            </div>
+
+            <div class="layui-row table-row" >
+                <div class="layui-col-md5" style="font-size: 0.9em">
+                    <img class="table-square" src="img/square.png" alt="正方形">近30天最高负荷
+                </div>
+                <div class="layui-col-md1" >&#10034</div>
+                <div class="layui-col-md6">
+                    <span>895</span>
+                </div>
+            </div>
+        </div>
     </div>
+
     <!-- 右边echarts折线图 -->
     <div class="right-chart">
       <div id="chart-con" style="height: 100%;"></div>
