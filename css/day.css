@@ -48,7 +48,7 @@ html,body,div,p,a,img,h1,h2,h3,h4,h5,h6,span,ul,li,ol,dl,dt,dd{margin:0;padding:
     margin-left:6px;
     box-sizing: border-box;
 	float: left;
-	border: 1px solid #bbbbbb;
+	/*border: 1px solid #bbbbbb;*/
 }
 .sidebar{
 	width: 100%;
@@ -108,7 +108,7 @@ html,body,div,p,a,img,h1,h2,h3,h4,h5,h6,span,ul,li,ol,dl,dt,dd{margin:0;padding:
 		outline-style: none;
 }
 .center-data {
-	min-height:calc(100vh - 140px);
+	min-height:850px;
 	width: 100%;
 	border: 1px solid #bbbbbb;
 	margin-top: 5px;
@@ -139,7 +139,8 @@ color:#fe3636;
 	background-color: #f1f1f1;
 }
 .right-chart{
-	height: 755px;
+	height:calc(100vh - 200px);
 	margin-top: 10px;
 	border-top: 1px solid #bbbbbb;
+
 }

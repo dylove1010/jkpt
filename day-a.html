@@ -247,32 +247,58 @@
         </div>
     </div>
 
-    <!-- 右边echarts折线图 -->
+
     <div class="right-chart">
         <div class="layui-form">
             <div class="layui-form-item">
-                <div class="layui-inline">
-                    <label class="layui-form-label">中文版</label>
+                <div class="layui-inline" style="margin-top: 10px">
+                    <label class="layui-form-label" style="font-size: 1.1em">日期</label>
                     <div class="layui-input-inline">
                         <input type="text" class="layui-input" id="test1" placeholder="yyyy-MM-dd">
                     </div>
+                    <button type="button" class="layui-btn">前一天</button>
+                    <button type="button" class="layui-btn">后一天</button>
+                        <span class="layui-breadcrumb nev-bread" lay-separator="|">
+                            <a href="">电流</a>
+                            <a href="">电压</a>
+                            <a href="">功率因数</a>
+                            <a href="">视在功率</a>
+                            <a href="">有功功率</a>
+                            <a href="">无功功率</a>
+                            <a href="">电量</a>
+                            <a href="">温度</a>
+                        </span>
                 </div>
             </div>
         </div>
-      <div id="chart-con" style="height: 100%;"></div>
+      <div id="chart-con" style="height: 100%"></div>
     </div>
-    
+
   </div>
 </div>
 <!-- 引入和初始化echarts -->
 <script type="text/javascript" src="js/echarts.min.js"></script>
-<script type="text/javascript" src="js/day.js"></script>
+
 <script src="js/laydate/laydate.js" charset="utf-8"></script>
+<script src="js/layui.js"></script>
+<script type="text/javascript" src="js/day.js"></script>
+<script type="text/javascript" src="js/day-a.js"></script>
 <script>
+    layui.use('element', function(){
+        var element = layui.element; //导航的hover效果、二级菜单等功能，需要依赖element模块
+
+        //监听导航点击
+        element.on('nav(demo)', function(elem) {
+            //console.log(elem)
+            layer.msg(elem.text());
+        });
+    });
+
     //执行一个laydate实例
     laydate.render({
         elem: '#test1' //指定元素
     });
+
 </script>
 </body>
 </html>
