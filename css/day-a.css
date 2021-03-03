@@ -3,8 +3,9 @@
     /*background-color: #ededed;*/
 }
 .unit{
-    height: 180px;
+    height: 200px;
     background-color: #ededed;
+
 }
 .unit-head{
     background-color:#4377dd;
@@ -12,7 +13,7 @@
     color: white;
 }
 .table-row {
-    background-color: #ededed;
+    /*background-color: #ededed;*/
     text-align: center;
 }
 .table-row div:first-child{

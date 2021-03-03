@@ -6,9 +6,9 @@
 <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
 <title>重庆邮电大学能耗监控管理平台</title>
 
-<link href="css/day.css" rel="stylesheet">
-<link href="css/day-a.css" rel="stylesheet">
-<link rel="stylesheet" href="css/layui.css">
+<link rel="stylesheet" href="css/day.css">
+<link rel="stylesheet" href="css/day-a.css">
+<link rel="stylesheet" href="css/layui.css" media="all">
 <link rel="stylesheet" href="css/zTreeStyle.css" type="text/css">
 
 <script type="text/javascript" src="js/jquery-1.4.4.min.js"></script>
@@ -61,9 +61,9 @@
 
    <!-- 右边统计数据表格 -->
   <div class="day-con-right">
-    <div class="layui-row layui-col-space10" style="margin-left: 0;margin-top: 0">
+    <div class="layui-row layui-col-space5">
         <!--第一个单元-->
-      <div class="layui-col-md3 unit" style="padding: 0">
+      <div class="layui-col-md3 unit" style="">
           <p class="unit-head">负载</p>
           <div class="layui-row table-row"  >
               <div class="layui-col-md5">
@@ -71,7 +71,7 @@
               </div>
               <div class="layui-col-md1" >&#10034</div>
               <div class="layui-col-md6" >
-                  <span style="color: red">中心配电房1000KV2</span>
+                  <span>中心配电房1000KV2</span>
               </div>
           </div>
 
@@ -101,26 +101,26 @@
               </div>
               <div class="layui-col-md1" >&#10034</div>
               <div class="layui-col-md6">
-                  <span>895</span>
+                  <span>895kw</span>
               </div>
           </div>
         </div>
         <!--第二个单元-->
-        <div class="layui-col-md3 unit" style="padding: 0">
-            <p class="unit-head">负载</p>
+        <div class="layui-col-md3 unit" style="">
+            <p class="unit-head">功率</p>
             <div class="layui-row table-row"  >
                 <div class="layui-col-md5">
-                    <img class="table-square" src="img/square.png" alt="正方形">线路名称
+                    <img class="table-square" src="img/square.png" alt="正方形">功率因数
                 </div>
-                <div class="layui-col-md1" >&#10034</div>
+                <div class="layui-col-md1">&#10034</div>
                 <div class="layui-col-md6" >
-                    <span style="color: red">中心配电房1000KV2</span>
+                    <span>2.5</span>
                 </div>
             </div>
 
             <div class="layui-row table-row" >
                 <div class="layui-col-md5">
-                    <img class="table-square" src="img/square.png" alt="正方形">额定容量
+                    <img class="table-square" src="img/square.png" alt="正方形">有功功率
                 </div>
                 <div class="layui-col-md1" >&#10034</div>
                 <div class="layui-col-md6">
@@ -130,7 +130,7 @@
 
             <div class="layui-row table-row" >
                 <div class="layui-col-md5">
-                    <img class="table-square" src="img/square.png" alt="正方形">负载
+                    <img class="table-square" src="img/square.png" alt="正方形">无功功率
                 </div>
                 <div class="layui-col-md1" >&#10034</div>
                 <div class="layui-col-md6">
@@ -140,18 +140,125 @@
 
             <div class="layui-row table-row" >
                 <div class="layui-col-md5" style="font-size: 0.9em">
-                    <img class="table-square" src="img/square.png" alt="正方形">近30天最高负荷
+                    <img class="table-square" src="img/square.png" alt="正方形">近30天最大功率
                 </div>
                 <div class="layui-col-md1" >&#10034</div>
                 <div class="layui-col-md6">
-                    <span>895</span>
+                    <span>985kw</span>
                 </div>
             </div>
+        </div>
+        <!--第三个单元-->
+        <div class="layui-col-md3 unit" style="">
+            <p class="unit-head">电流-电压</p>
+            <div class="layui-row table-row"  >
+                <div class="layui-col-md5">
+                    <img class="table-square" src="img/square.png" alt="正方形">A相电压
+                </div>
+                <div class="layui-col-md1">&#10034</div>
+                <div class="layui-col-md6" >
+                    <span>100V</span>
+                </div>
+            </div>
+
+            <div class="layui-row table-row" >
+                <div class="layui-col-md5">
+                    <img class="table-square" src="img/square.png" alt="正方形">B相电压
+                </div>
+                <div class="layui-col-md1" >&#10034</div>
+                <div class="layui-col-md6">
+                    <span>100V</span>
+                </div>
+            </div>
+
+            <div class="layui-row table-row" >
+                <div class="layui-col-md5">
+                    <img class="table-square" src="img/square.png" alt="正方形">C相电压
+                </div>
+                <div class="layui-col-md1" >&#10034</div>
+                <div class="layui-col-md6">
+                    <span>100V</span>
+                </div>
+            </div>
+
+            <div class="layui-row table-row" >
+                <div class="layui-col-md5" style="font-size: 0.9em">
+                    <img class="table-square" src="img/square.png" alt="正方形">A相电流
+                </div>
+                <div class="layui-col-md1" >&#10034</div>
+                <div class="layui-col-md6">
+                    <span>5A</span>
+                </div>
+            </div>
+
+            <div class="layui-row table-row" >
+                <div class="layui-col-md5" style="font-size: 0.9em">
+                    <img class="table-square" src="img/square.png" alt="正方形">B相电流
+                </div>
+                <div class="layui-col-md1" >&#10034</div>
+                <div class="layui-col-md6">
+                    <span>5A</span>
+                </div>
+            </div>
+
+            <div class="layui-row table-row" >
+                <div class="layui-col-md5" style="font-size: 0.9em">
+                    <img class="table-square" src="img/square.png" alt="正方形">C相电流
+                </div>
+                <div class="layui-col-md1" >&#10034</div>
+                <div class="layui-col-md6">
+                    <span>5A</span>
+                </div>
+            </div>
+        </div>
+        <!--第四个单元-->
+        <div class="layui-col-md3 unit">
+            <p class="unit-head">电流-电压</p>
+            <div class="layui-row table-row"  >
+                <div class="layui-col-md5">
+                    <img class="table-square" src="img/square.png" alt="正方形">A相温度
+                </div>
+                <div class="layui-col-md1">&#10034</div>
+                <div class="layui-col-md6" >
+                    <span>30℃</span>
+                </div>
+            </div>
+
+            <div class="layui-row table-row" >
+                <div class="layui-col-md5">
+                    <img class="table-square" src="img/square.png" alt="正方形">B相温度
+                </div>
+                <div class="layui-col-md1" >&#10034</div>
+                <div class="layui-col-md6">
+                    <span>50℃</span>
+                </div>
+            </div>
+
+            <div class="layui-row table-row" >
+                <div class="layui-col-md5">
+                    <img class="table-square" src="img/square.png" alt="正方形">C相温度
+                </div>
+                <div class="layui-col-md1" >&#10034</div>
+                <div class="layui-col-md6">
+                    <span>40℃</span>
+                </div>
+            </div>
+
         </div>
     </div>
 
     <!-- 右边echarts折线图 -->
     <div class="right-chart">
+        <div class="layui-form">
+            <div class="layui-form-item">
+                <div class="layui-inline">
+                    <label class="layui-form-label">中文版</label>
+                    <div class="layui-input-inline">
+                        <input type="text" class="layui-input" id="test1" placeholder="yyyy-MM-dd">
+                    </div>
+                </div>
+            </div>
+        </div>
       <div id="chart-con" style="height: 100%;"></div>
     </div>
     
@@ -160,5 +267,12 @@
 <!-- 引入和初始化echarts -->
 <script type="text/javascript" src="js/echarts.min.js"></script>
 <script type="text/javascript" src="js/day.js"></script>
+<script src="js/laydate/laydate.js" charset="utf-8"></script>
+<script>
+    //执行一个laydate实例
+    laydate.render({
+        elem: '#test1' //指定元素
+    });
+</script>
 </body>
 </html>
