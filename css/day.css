@@ -138,7 +138,8 @@ html,body,div,p,a,img,h1,h2,h3,h4,h5,h6,span,ul,li,ol,dl,dt,dd{margin:0;padding:
 	background-color: #f1f1f1;
 }
 .right-chart{
-	height:calc(100vh - 275px);
+	clear: both;
+	height: auto;
 	margin-top: 5px;
 	margin-left: 5px;
 	border:1px solid #bbbbbb;

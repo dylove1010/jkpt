@@ -1,44 +1,48 @@
 .row{
-    margin-top: 5px;
-}
-.row-item{
+    overflow: hidden;
     margin-left: 5px;
+    margin-top: 5px;
+    border: 1px solid #bbbbbb;
+}
+.row .row-item{
+    height: 200px;
     width: 24.5%;
     float: left;
+    margin-right: 5px;
+    background-color:#ededed ;
 }
-.li-head{
+.row .row-item li.li-head{
+    padding: 5px;
+    color: white;
     background-color: #4377dd;
 }
-
-
-.unit{
-    height: 200px;
-    background-color: #ededed;
-
-}
-.unit-head{
-    background-color:#4377dd;
-    padding:5px 5px 5px 10px;
-    color: white;
-}
-.table-row {
-    /*background-color: #ededed;*/
-    text-align: center;
-}
-.table-row div:first-child{
-    text-align: left;
-}
-.table-row div{
+.row .row-item li.li-content{
+    overflow:hidden;
     margin-top: 8px;
 }
-.table-row img{
+.row .row-item li.li-content ul li{
+    display: block;
+    float: left;
+}
+.row .row-item li.li-content ul li:first-child{
+   width: 45%;
+}
+.row .row-item li.li-content ul li:nth-child(2){
+    width: 5%;
+}
+.row .row-item li.li-content ul li:nth-child(3){
+    width: 50%;
+    text-align: center;
+}
+.row .row-item li img{
     height: 8px;
     margin-left: 5px;
     margin-right: 5px;
 }
-.table-row span{
+.row .row-item li.li-content span{
     color: red;
 }
+
 .nev-bread{
     display: inline-block;
     margin-left: 60px;
