@@ -19,13 +19,13 @@ html,body,div,p,a,img,h1,h2,h3,h4,h5,h6,span,ul,li,ol,dl,dt,dd{margin:0;padding:
 /*内容*/
 .day-con{
 	clear: both;
-	width: 100%;
     height: 100%;
 	min-width:1440px;
     margin: 0 auto;
 	/* display: flex;
     flex-flow: row nowrap; */
-    outline: none;}
+    outline: none;
+}
 .day-con-left{
 	width: 30px;
 	height: 100%;
@@ -42,11 +42,9 @@ html,body,div,p,a,img,h1,h2,h3,h4,h5,h6,span,ul,li,ol,dl,dt,dd{margin:0;padding:
 	float: left;
 }
 .day-con-right{
-	min-width: 1155px;
-	height: 100%;
-	margin-top: 5px;
-    margin-left:6px;
-    box-sizing: border-box;
+	width: calc(100vw - 310px);
+	min-width: 1130px;
+	/*height: 100%;*/
 	float: left;
 	/*border: 1px solid #bbbbbb;*/
 }
@@ -108,16 +106,17 @@ html,body,div,p,a,img,h1,h2,h3,h4,h5,h6,span,ul,li,ol,dl,dt,dd{margin:0;padding:
 		outline-style: none;
 }
 .center-data {
-	min-height:850px;
+	min-height:calc(100vh - 178px);
 	width: 100%;
 	border: 1px solid #bbbbbb;
 	margin-top: 5px;
 }
 .right-tab {
-	width: calc(100% - 50px);
+	margin-left: 5px;
+	margin-top: 5px;
 	background-color: #f9f9f9;
 	padding: 10px;
-	border-bottom: 1px solid #bbbbbb;
+	border: 1px solid #bbbbbb;
 }
 .right-tab table{
 	width: 100%;
@@ -133,14 +132,14 @@ html,body,div,p,a,img,h1,h2,h3,h4,h5,h6,span,ul,li,ol,dl,dt,dd{margin:0;padding:
 	background-color: #f9f9f9;
 }
 .right-tab table td.tab-data{
-color:#fe3636;
+	color:#fe3636;
 }
 .right-tab table tr.alt td{
 	background-color: #f1f1f1;
 }
 .right-chart{
-	height:calc(100vh - 200px);
-	margin-top: 10px;
-	border-top: 1px solid #bbbbbb;
-
+	height:calc(100vh - 275px);
+	margin-top: 5px;
+	margin-left: 5px;
+	border:1px solid #bbbbbb;
 }

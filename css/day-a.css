@@ -1,7 +1,16 @@
-.day-con-right .day-con-right-row{
-    /*height: 180px;*/
-    /*background-color: #ededed;*/
+.row{
+    margin-top: 5px;
 }
+.row-item{
+    margin-left: 5px;
+    width: 24.5%;
+    float: left;
+}
+.li-head{
+    background-color: #4377dd;
+}
+
+
 .unit{
     height: 200px;
     background-color: #ededed;
