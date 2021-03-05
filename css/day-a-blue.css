@@ -1,0 +1,36 @@
+
+.day-con:before{
+    content: " ";
+    display: table;
+}
+
+.nhjk-header{
+    background-color: #0092D7;
+}
+.nhjk-header .header-nav ul>li.active{
+    background: #087ab0;
+}
+.nhjk-header .header-nav ul>li:hover{
+    background-color:#087ab0;
+}
+
+.day-con-left{
+    margin: 0;
+    background-color: #222d32;
+}
+.sidebar{
+    min-height: 760px;
+}
+.day-con-center{
+    height: 100%;
+    margin: 0;
+    background-color: #222d32;
+}
+.center-tab{
+    border: none;
+    color: white;
+}
+.center-data{
+    margin: 0;
+    border: none;
+}

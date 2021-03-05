@@ -1,0 +1,263 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,Chorme=1">
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+<title>重庆邮电大学能耗监控管理平台</title>
+
+<link rel="stylesheet" href="css/day.css">
+<link rel="stylesheet" href="css/day-a.css">
+<link rel="stylesheet" href="css/day-a-blue.css">
+<link rel="stylesheet" href="css/layui.css" media="all">
+<link rel="stylesheet" href="css/zTreeStyle.css" type="text/css">
+
+<script type="text/javascript" src="js/jquery-1.4.4.min.js"></script>
+<script type="text/javascript" src="js/jquery.ztree.core.js"></script>
+</head>
+
+<body>
+
+    <div class="nhjk-header">
+        <div class="header-logo"><img alt="平台名称和标志" src="img/cy-nhjk-logo.png"></div>
+        <div class="header-nav">
+            <ul>
+                <li class="active"><a class="nav-icon1">全校概览</a></li>
+                <li><a class="nav-icon2">实时监测</a></li>
+                <li><a class="nav-icon3">统计报表</a></li>
+                <li><a class="nav-icon4">能耗分析</a></li>
+                <li><a class="nav-icon5">报警模块</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="day-con">
+        <!-- 侧边栏菜单 -->
+
+            <div class="day-con-left">
+                <div class="sidebar">
+                    <ul>
+                        <li ><a href="#">电</a></li>
+                        <li ><a href="#">水</a></li>
+                        <li style="height: 105px;"><a style="line-height: 23px;padding: 6px 0;" href="#">水电综合</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- 单位树形列表 -->
+            <div class="day-con-center">
+                <!-- 标签 -->
+                <div class="center-tab">
+                    <ul>
+                        <li >全&nbsp&nbsp校</li>
+                        <li >二级单位</li>
+                        <li >配电室</li>
+                    </ul>
+                </div>
+                <!-- 中间树形列表 -->
+                <div class="center-data">
+                    <div>
+                        <ul id="unitTree" class="ztree"></ul>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <!-- 右边统计数据表格 -->
+            <div class="day-con-right" >
+                <div class="row">
+                    <ul class="row-item">
+                        <li class="li-head">负载</li>
+                        <li class="li-content">
+                            <ul>
+                                <li><img class="table-square" src="img/square.png" alt="正方形">线路名称</li>
+                                <li>&#10034</li>
+                                <li><span>中心配电房1000KV2</span></li>
+                            </ul>
+                        </li>
+                        <li class="li-content">
+                            <ul>
+                                <li><img class="table-square" src="img/square.png" alt="正方形">额定容量</li>
+                                <li>&#10034</li>
+                                <li><span>100kw</span></li>
+                            </ul>
+                        </li>
+                        <li class="li-content">
+                            <ul>
+                                <li><img class="table-square" src="img/square.png" alt="正方形">负载</li>
+                                <li>&#10034</li>
+                                <li><span>150kw</span></li>
+                            </ul>
+                        </li>
+                        <li class="li-content">
+                            <ul>
+                                <li><img class="table-square" src="img/square.png" alt="正方形">近30天最高负荷</li>
+                                <li>&#10034</li>
+                                <li><span>110kw</span></li>
+                            </ul>
+                        </li>
+                    </ul>
+
+                    <ul class="row-item">
+                        <li class="li-head">功率</li>
+                        <li class="li-content">
+                            <ul>
+                                <li><img class="table-square" src="img/square.png" alt="正方形">功率因数</li>
+                                <li>&#10034</li>
+                                <li><span>中心配电房1000KV2</span></li>
+                            </ul>
+                        </li>
+                        <li class="li-content">
+                            <ul>
+                                <li><img class="table-square" src="img/square.png" alt="正方形">有功功率</li>
+                                <li>&#10034</li>
+                                <li><span>100kw</span></li>
+                            </ul>
+                        </li>
+                        <li class="li-content">
+                            <ul>
+                                <li><img class="table-square" src="img/square.png" alt="正方形">无功功率</li>
+                                <li>&#10034</li>
+                                <li><span>150kw</span></li>
+                            </ul>
+                        </li>
+                        <li class="li-content">
+                            <ul>
+                                <li><img class="table-square" src="img/square.png" alt="正方形">近30天最大功率</li>
+                                <li>&#10034</li>
+                                <li><span>110kw</span></li>
+                            </ul>
+                        </li>
+                    </ul>
+
+                    <ul class="row-item">
+                        <li class="li-head">电流-电压</li>
+                        <li class="li-content">
+                            <ul>
+                                <li><img class="table-square" src="img/square.png" alt="正方形">A相电压</li>
+                                <li>&#10034</li>
+                                <li><span>50KV</span></li>
+                            </ul>
+                        </li>
+                        <li class="li-content">
+                            <ul>
+                                <li><img class="table-square" src="img/square.png" alt="正方形">B相电压</li>
+                                <li>&#10034</li>
+                                <li><span>50KV</span></li>
+                            </ul>
+                        </li>
+                        <li class="li-content">
+                            <ul>
+                                <li><img class="table-square" src="img/square.png" alt="正方形">C相电压</li>
+                                <li>&#10034</li>
+                                <li><span>50KV</span></li>
+                            </ul>
+                        </li>
+                        <li class="li-content">
+                            <ul>
+                                <li><img class="table-square" src="img/square.png" alt="正方形">A相电流</li>
+                                <li>&#10034</li>
+                                <li><span>30A</span></li>
+                            </ul>
+                        </li>
+                        <li class="li-content">
+                            <ul>
+                                <li><img class="table-square" src="img/square.png" alt="正方形">B相电流</li>
+                                <li>&#10034</li>
+                                <li><span>20A</span></li>
+                            </ul>
+                        </li>
+                        <li class="li-content">
+                            <ul>
+                                <li><img class="table-square" src="img/square.png" alt="正方形">C相电流</li>
+                                <li>&#10034</li>
+                                <li><span>10A</span></li>
+                            </ul>
+                        </li>
+                    </ul>
+
+                    <ul class="row-item" style="margin: 0">
+                        <li class="li-head">温度</li>
+                        <li class="li-content">
+                            <ul>
+                                <li><img class="table-square" src="img/square.png" alt="正方形">A相温度</li>
+                                <li>&#10034</li>
+                                <li><span>40℃</span></li>
+                            </ul>
+                        </li>
+                        <li class="li-content">
+                            <ul>
+                                <li><img class="table-square" src="img/square.png" alt="正方形">B相温度</li>
+                                <li>&#10034</li>
+                                <li><span>40℃</span></li>
+                            </ul>
+                        </li>
+                        <li class="li-content">
+                            <ul>
+                                <li><img class="table-square" src="img/square.png" alt="正方形">C相温度</li>
+                                <li>&#10034</li>
+                                <li><span>40℃</span></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="right-chart">
+                    <div class="layui-form">
+                        <div class="layui-form-item">
+                            <div class="layui-inline" style="margin-top: 10px">
+                                <label class="layui-form-label" style="font-size: 1.1em">日期</label>
+                                <div class="layui-input-inline">
+                                    <input type="text" class="layui-input" id="test1" placeholder="yyyy-MM-dd">
+                                </div>
+                                <button type="button" class="layui-btn layui-btn-normal">前一天</button>
+                                <button type="button" class="layui-btn layui-btn-normal">后一天</button>
+                                <span class="layui-breadcrumb nev-bread" lay-separator="|">
+                            <a href="">电流</a>
+                            <a href="">电压</a>
+                            <a href="">功率因数</a>
+                            <a href="">视在功率</a>
+                            <a href="">有功功率</a>
+                            <a href="">无功功率</a>
+                            <a href="">电量</a>
+                            <a href="">温度</a>
+                        </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="chart-con" style="height: 480px"></div>
+                </div>
+
+            </div>
+
+
+    </div>
+
+
+<!-- 引入和初始化echarts -->
+<script type="text/javascript" src="js/echarts.min.js"></script>
+
+<script src="js/laydate/laydate.js" charset="utf-8"></script>
+<script src="js/layui.js"></script>
+<script type="text/javascript" src="js/day.js"></script>
+<script type="text/javascript" src="js/day-a.js"></script>
+<script>
+    layui.use('element', function(){
+        var element = layui.element; //导航的hover效果、二级菜单等功能，需要依赖element模块
+
+        //监听导航点击
+        element.on('nav(demo)', function(elem) {
+            //console.log(elem)
+            layer.msg(elem.text());
+        });
+    });
+
+    //执行一个laydate实例
+    laydate.render({
+        elem: '#test1' //指定元素
+    });
+
+</script>
+</body>
+</html>
