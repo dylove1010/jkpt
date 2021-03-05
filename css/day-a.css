@@ -4,6 +4,11 @@
     margin-top: 5px;
     border: 1px solid #bbbbbb;
 }
+.row:after {
+    content: '  ';
+    display: table;
+    clear: both;
+}
 .row .row-item{
     height: 200px;
     width: 24.5%;
@@ -49,4 +54,8 @@
 }
 .nev-bread a{
     color: red;
+}
+.right-chart{
+    height: auto;
+    /*border: 0;*/
 }

@@ -17,6 +17,10 @@ html,body,div,p,a,img,h1,h2,h3,h4,h5,h6,span,ul,li,ol,dl,dt,dd{margin:0;padding:
 .nhjk-header .header-nav ul>li>a.nav-icon4{background:url(../img/nhjk-navicon-nhfx.png) center 10px no-repeat;}
 .nhjk-header .header-nav ul>li>a.nav-icon5{background:url(../img/nhjk-navicon-bjmk.png) center 10px no-repeat;}
 /*内容*/
+img{
+	display: inline-block;
+	vertical-align: middle;
+}
 .day-con{
 	clear: both;
     height: 100%;
@@ -34,7 +38,7 @@ html,body,div,p,a,img,h1,h2,h3,h4,h5,h6,span,ul,li,ol,dl,dt,dd{margin:0;padding:
 	float: left;
 }
 .day-con-center{
-	width: 240px;
+	width: auto;
 	height: 100%;
 	margin-top: 5px;
     margin-left:6px;
@@ -44,7 +48,7 @@ html,body,div,p,a,img,h1,h2,h3,h4,h5,h6,span,ul,li,ol,dl,dt,dd{margin:0;padding:
 .day-con-right{
 	width: calc(100vw - 310px);
 	min-width: 1130px;
-	/*height: 100%;*/
+	/*height: auto;*/
 	float: left;
 	/*border: 1px solid #bbbbbb;*/
 }
@@ -80,11 +84,6 @@ html,body,div,p,a,img,h1,h2,h3,h4,h5,h6,span,ul,li,ol,dl,dt,dd{margin:0;padding:
 		color:white;
 		outline-style: none;
 }
-/*.sidebar ul li a:focus{*/
-/*	background-color: #0099ff;*/
-/*	color:white;*/
-/*	outline-style: none;*/
-/*}*/
 .center-tab {
 	height:60px;
 	width: 100%;
@@ -106,7 +105,7 @@ html,body,div,p,a,img,h1,h2,h3,h4,h5,h6,span,ul,li,ol,dl,dt,dd{margin:0;padding:
 		outline-style: none;
 }
 .center-data {
-	min-height:calc(100vh - 178px);
+	min-height:700px;
 	width: 100%;
 	border: 1px solid #bbbbbb;
 	margin-top: 5px;
@@ -138,9 +137,10 @@ html,body,div,p,a,img,h1,h2,h3,h4,h5,h6,span,ul,li,ol,dl,dt,dd{margin:0;padding:
 	background-color: #f1f1f1;
 }
 .right-chart{
-	clear: both;
-	height: auto;
+	height: 594px;
 	margin-top: 5px;
 	margin-left: 5px;
+	padding-top:10px;
 	border:1px solid #bbbbbb;
+
 }
