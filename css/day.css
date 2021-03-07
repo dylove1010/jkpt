@@ -22,7 +22,7 @@ img{
 	vertical-align: middle;
 }
 .day-con{
-	clear: both;
+	/*clear: both;*/
     height: 100%;
 	min-width:1440px;
     margin: 0 auto;
@@ -30,10 +30,15 @@ img{
     flex-flow: row nowrap; */
     outline: none;
 }
+.day-con:before,.day-con:after{
+	content: '  ';
+	display: table;
+	clear: both;
+}
 .day-con-left{
 	width: 30px;
 	height: 100%;
-    margin-left:2px;
+    margin-left:10px;
     box-sizing: border-box;
 	float: left;
 }
@@ -46,7 +51,7 @@ img{
 	float: left;
 }
 .day-con-right{
-	width: calc(100vw - 310px);
+	width: calc(100vw - 305px);
 	min-width: 1130px;
 	/*height: auto;*/
 	float: left;

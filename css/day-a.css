@@ -11,9 +11,9 @@
 }
 .row .row-item{
     height: 200px;
-    width: 24.5%;
+    width: 24.65%;
     float: left;
-    margin-right: 5px;
+    margin-right: 10px;
     background-color:#ededed ;
 }
 .row .row-item li.li-head{
