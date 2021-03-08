@@ -1,5 +1,5 @@
 .row{
-    overflow: hidden;
+
     margin-left: 5px;
     margin-top: 5px;
     border: 1px solid #bbbbbb;
@@ -56,6 +56,5 @@
     color: red;
 }
 .right-chart{
-    height: auto;
-    /*border: 0;*/
+    height: 576px;
 }
